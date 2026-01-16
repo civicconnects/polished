@@ -7,16 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#FDF2F8", // Soft Pink
-        secondary: "#D4AF37", // Metallic Gold
-        accent: "#FBCFE8", // Lighter Pink
-        "brand-pink": "#f33fc3",
-        "brand-gold": "#c59d5f",
+        'bg-color': 'var(--bg-color)',
+        'text-color': 'var(--text-color)',
+        'accent-color': 'var(--accent-color)',
+        'grid-line': 'var(--grid-line)',
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'serif'],
-        sans: ['"Inter"', 'sans-serif'],
-        script: ['"Pinyon Script"', 'cursive'],
+        headline: ['"Playfair Display"', 'serif'],
+        body: ['"Inter"', 'sans-serif'],
       },
     },
   },

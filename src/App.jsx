@@ -1,31 +1,23 @@
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import BenefitBand from './components/BenefitBand';
-import MotionSection from './components/MotionSection';
-import ProductShowcase from './components/ProductShowcase';
-import Testimonials from './components/Testimonials';
-import FAQ from './components/FAQ';
+import RedesignHero from './components/RedesignHero';
+import Marquee from './components/Marquee';
+import BentoGrid from './components/BentoGrid';
+import Lookbook from './components/Lookbook';
 import Footer from './components/Footer';
-import FloatingShopButton from './components/FloatingShopButton';
 import ChatWidget from './components/ChatWidget';
 
-function App() {
+const App = () => {
   return (
-    <div className="bg-white min-h-screen selection:bg-brand-pink selection:text-white">
+    <div className="bg-[#0f0f0f] text-[#f0f0f0] min-h-screen selection:bg-[#d4af37] selection:text-white">
       <Navbar />
-      <main>
-        <Hero />
-        <BenefitBand />
-        <MotionSection />
-        <ProductShowcase />
-        <Testimonials />
-        <FAQ />
-      </main>
+      <RedesignHero />
+      <Marquee />
+      <BentoGrid />
+      <Lookbook />
       <Footer />
-      <FloatingShopButton />
       <ChatWidget />
     </div>
   );
-}
+};
 
 export default App;

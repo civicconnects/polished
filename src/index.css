@@ -3,13 +3,97 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
+  :root {
+    --bg-color: #0f0f0f;
+    --text-color: #f0f0f0;
+    --accent-color: #d4af37;
+    --grid-line: #333333;
   }
+
+  /* --- NEW LOOKBOOK SECTION STYLES --- */
+  .lookbook-section {
+    padding: 4rem 2rem;
+    border-bottom: 1px solid var(--grid-line);
+  }
+
+  /* A 3-column grid that breaks down on mobile */
+  .lookbook-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    grid-auto-rows: 400px;
+    /* Fixed height for uniform rows */
+  }
+
+  .lookbook-item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--grid-line);
+    background: #000;
+    /* Ensure black behind images */
+  }
+
+  /* To create that "Bento" uneven feel, make the first image bigger */
+  .lookbook-item.featured {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  /* MOBILE FIX for the featured item */
+  @media (max-width: 900px) {
+    .lookbook-item.featured {
+      grid-row: span 1;
+      grid-column: span 1;
+    }
+
+    .lookbook-grid {
+      grid-auto-rows: 350px;
+    }
+  }
+
+  /* --- THE "MOODY EDITORIAL" IMAGE FILTER --- */
+  /* This makes the bright images blend into the dark site */
+  .lookbook-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*Desaturate slightly and darken so white backgrounds don't pop too much */
+    filter: grayscale(40%) brightness(70%) contrast(110%);
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  /* Add a dark gradient overlay for extra luxury depth */
+  .lookbook-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(10, 10, 10, 0.8) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  /* HOVER STATE: Bring the image to full life */
+  .lookbook-item:hover img {
+    transform: scale(1.05);
+    /* Slow zoom */
+    filter: grayscale(0%) brightness(100%) contrast(100%);
+    /* Full color */
+  }
+
   body {
-    @apply bg-primary text-gray-900 font-sans antialiased;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: theme('fontFamily.body');
+    overflow-x: hidden;
+    margin: 0;
   }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
+
+  h1,
+  h2,
+  h3 {
+    font-family: theme('fontFamily.headline');
+    font-weight: 400;
+    margin: 0;
+    line-height: 0.95;
+    text-transform: uppercase;
   }
 }
