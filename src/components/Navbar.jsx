@@ -4,7 +4,7 @@ import { navLinks } from '../constants';
 
 const Navbar = () => {
     return (
-        <nav className="fixed top-0 w-[95%] left-[2.5%] z-50 flex justify-between items-center py-8 mix-blend-difference text-white">
+        <nav className="fixed top-0 w-[95%] left-[2.5%] z-50 flex justify-between items-center py-8 text-white">
             <div className="w-56 md:w-64">
                 <img src="/images/new-logo.png" alt="Polished by Melissa" className="w-full object-contain invert brightness-0" />
             </div>

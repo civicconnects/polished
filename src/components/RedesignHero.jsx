@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 const RedesignHero = () => {
     return (
         <section className="h-screen flex flex-col justify-center items-center text-center border-b border-grid-line relative overflow-hidden">
-            <div className="absolute inset-0 z-0">
-                <img src="/images/header-bg-gucci.jpg" alt="Background" className="w-full h-full object-cover opacity-80" />
-                <div className="absolute inset-0 bg-black/30" />
+            <div className="absolute inset-0 z-0 bg-[#0f0f0f]">
+                <img src="/images/header-bg-gucci.jpg" alt="Background" className="w-full h-full object-cover object-top opacity-70" />
+                <div className="absolute inset-0 bg-black/40" />
             </div>
             <motion.h1
                 initial={{ opacity: 0, y: 50 }}
