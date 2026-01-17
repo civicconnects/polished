@@ -4,7 +4,7 @@ const RedesignHero = () => {
     return (
         <section className="h-screen flex flex-col justify-start items-center text-center border-b border-grid-line relative overflow-hidden">
             <div className="absolute inset-x-0 bottom-0 top-[15%] z-0 bg-[#eeeced]">
-                <img src="/images/header-bg-transparent.png" alt="Background" className="w-full h-full object-contain object-bottom opacity-100 mix-blend-multiply invert-0" />
+                <img src="/images/header-bg-transparent.png" alt="Background" className="w-full h-full object-contain object-bottom opacity-100" />
                 <div className="absolute inset-0 bg-transparent" />
             </div>
             <motion.h1
