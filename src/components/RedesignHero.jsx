@@ -7,9 +7,10 @@ const RedesignHero = () => {
             <div
                 className="absolute inset-0 w-full h-full -z-10"
                 style={{
-                    backgroundImage: `linear-gradient(to bottom, rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0.4)), url('/header-bg.jpg')`,
+                    backgroundImage: `linear-gradient(to bottom, rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0.4)), url('/header-bg-new.png')`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center top'
+                    backgroundPosition: 'center top',
+                    backgroundRepeat: 'no-repeat'
                 }}
             />
 
