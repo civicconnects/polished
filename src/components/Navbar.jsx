@@ -4,9 +4,9 @@ import { navLinks } from '../constants';
 
 const Navbar = () => {
     return (
-        <nav className="fixed top-0 w-[95%] left-[2.5%] z-50 flex justify-between items-center py-8 text-white">
+        <nav className="fixed top-0 w-[95%] left-[2.5%] z-50 flex justify-between items-center py-8 text-black">
             <div className="w-56 md:w-64">
-                <img src="/images/new-logo.png" alt="Polished by Melissa" className="w-full object-contain invert brightness-0" />
+                <img src="/images/new-logo.png" alt="Polished by Melissa" className="w-full object-contain" />
             </div>
             <a href="#contact" className="border border-white px-8 py-3 rounded-full uppercase text-xs hover:bg-white hover:text-black transition-all duration-300">
                 Book Appointment

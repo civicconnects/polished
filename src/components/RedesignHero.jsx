@@ -3,15 +3,15 @@ import { motion } from 'framer-motion';
 const RedesignHero = () => {
     return (
         <section className="h-screen flex flex-col justify-start items-center text-center border-b border-grid-line relative overflow-hidden pt-48 md:pt-64">
-            <div className="absolute inset-0 z-0 bg-[#0f0f0f]">
-                <img src="/images/header-bg-gucci.jpg" alt="Background" className="w-full h-full object-contain opacity-70" />
-                <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 z-0 bg-[#e9e7e8]">
+                <img src="/images/header-bg-final.jpg" alt="Background" className="w-full h-full object-contain opacity-100" />
+                <div className="absolute inset-0 bg-transparent" />
             </div>
             <motion.h1
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
-                className="absolute top-[20%] left-0 right-0 text-[15vw] leading-none tracking-widest mix-blend-overlay text-white font-serif z-10"
+                className="absolute top-[10%] left-0 right-0 text-[15vw] leading-none tracking-widest text-black font-serif z-10"
             >
                 POLISHED
             </motion.h1>
