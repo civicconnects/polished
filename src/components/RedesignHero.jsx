@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 
 const RedesignHero = () => {
     return (
-        <section className="h-screen flex flex-col justify-start items-center text-center border-b border-grid-line relative overflow-hidden pt-48 md:pt-64">
-            <div className="absolute inset-0 z-0 bg-[#e9e7e8]">
-                <img src="/images/header-bg-final.jpg" alt="Background" className="w-full h-full object-contain opacity-100" />
+        <section className="h-screen flex flex-col justify-start items-center text-center border-b border-grid-line relative overflow-hidden">
+            <div className="absolute inset-x-0 bottom-0 top-[15%] z-0 bg-[#e9e7e8]">
+                <img src="/images/header-bg-final.jpg" alt="Background" className="w-full h-full object-contain object-bottom opacity-100" />
                 <div className="absolute inset-0 bg-transparent" />
             </div>
             <motion.h1
