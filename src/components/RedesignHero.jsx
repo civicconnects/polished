@@ -2,29 +2,19 @@ import { motion } from 'framer-motion';
 
 const RedesignHero = () => {
     return (
-        <section className="relative h-[70vh] min-h-[500px] flex flex-col justify-center items-center text-center px-8 overflow-hidden text-[#f0f0f0]">
-            {/* Background Image with Dark Gradient Overlay */}
-            <div
-                className="absolute inset-0 w-full h-full -z-10"
-                style={{
-                    backgroundImage: `linear-gradient(to bottom, rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0.4)), url('/header-bg-new.png')`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center top',
-                    backgroundRepeat: 'no-repeat'
-                }}
+        <section className="relative h-[70vh] min-h-[500px] flex flex-col justify-start items-center text-center px-8 pt-28 overflow-hidden text-[#0f0f0f]" style={{ backgroundColor: '#FFC0CB' }}>
+            {/* Background Image/Gradient removed for solid color */}
+
+            {/* Centered Image behind text */}
+            <img
+                src="/images/melissa-hero-final.png"
+                alt="Polished by Melissa"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 max-h-[90%] w-auto z-0 opacity-100 pointer-events-none"
             />
 
-            <h1 className="font-serif text-[3.5rem] md:text-[5rem] font-bold leading-[1.1] mb-4 drop-shadow-md">
-                Polished by Melissa
+            <h1 className="relative z-10 font-serif text-[5rem] md:text-[9rem] font-bold leading-none text-[#d4af37] tracking-tight">
+                POLISHED
             </h1>
-
-            <p className="font-sans text-base md:text-[1.25rem] font-light max-w-[600px] mb-8 opacity-90">
-                Luxury hair care, silk press mastery, and wardrobe strategy for the modern woman.
-            </p>
-
-            <div className="bg-[#f0f0f0] text-[#0f0f0f] px-8 py-3 uppercase tracking-widest text-sm font-semibold cursor-pointer hover:bg-[#d4af37] transition-colors duration-300">
-                Book Your Transformation
-            </div>
         </section>
     );
 };
