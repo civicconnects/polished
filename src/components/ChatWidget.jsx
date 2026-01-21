@@ -111,7 +111,7 @@ const ChatWidget = () => {
                                 <div className="relative">
                                     <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-brand-gold">
                                         <img
-                                            src="/images/melissa-headshot.jpg"
+                                            src="/images/melissa-chat-new.jpg"
                                             alt="Agent"
                                             className="w-full h-full object-cover object-top"
                                         />
@@ -176,7 +176,7 @@ const ChatWidget = () => {
                     className="w-16 h-16 rounded-full shadow-lg overflow-hidden border-2 border-white relative group"
                 >
                     <img
-                        src="/images/melissa-headshot.jpg"
+                        src="/images/melissa-chat-new.jpg"
                         alt="Chat with us"
                         className="w-full h-full object-cover object-top"
                     />

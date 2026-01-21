@@ -4,34 +4,34 @@ const Lookbook = () => {
             <h2 className="text-6xl md:text-8xl mb-12 border-b border-[#333333] pb-8 section-header">The Look</h2>
 
             <div className="lookbook-grid">
-                <div className="lookbook-item">
-                    <img src="/images/new-bundle-1.jpg" alt="Premium Hair Bundle" />
-                    <p className="caption">Premium Hair Bundle</p>
+                <div className="lookbook-item featured">
+                    <img src="/images/lookbook/uploaded_image_0_1768954218907.jpg" alt="Model 1" />
+                    <p className="caption">The Look</p>
                 </div>
 
                 <div className="lookbook-item">
-                    <img src="/images/new-bundle-2.jpg" alt="Premium Hair Bundle" />
-                    <p className="caption">Premium Hair Bundle</p>
+                    <img src="/images/lookbook/uploaded_image_1_1768954218907.jpg" alt="Model 2" />
+                    <p className="caption">The Look</p>
                 </div>
 
                 <div className="lookbook-item">
-                    <img src="/images/new-bundle-3.jpg" alt="Premium Hair Bundle" />
-                    <p className="caption">Premium Hair Bundle</p>
+                    <img src="/images/lookbook/uploaded_image_2_1768954218907.jpg" alt="Model 3" />
+                    <p className="caption">The Look</p>
                 </div>
 
                 <div className="lookbook-item">
-                    <img src="/images/new-bundle-4.jpg" alt="Premium Hair Bundle" />
-                    <p className="caption">Premium Hair Bundle</p>
+                    <img src="/images/lookbook/uploaded_image_3_1768954218907.jpg" alt="Model 4" />
+                    <p className="caption">The Look</p>
                 </div>
 
                 <div className="lookbook-item">
-                    <img src="/images/new-bundle-5.jpg" alt="Premium Hair Bundle" />
-                    <p className="caption">Premium Hair Bundle</p>
+                    <img src="/images/lookbook/natural-india-curly.jpg" alt="Natural India Curly" />
+                    <p className="caption">Natural India Curly</p>
                 </div>
 
                 <div className="lookbook-item">
-                    <img src="/images/new-bundle-6.jpg" alt="Premium Hair Bundle" />
-                    <p className="caption">Premium Hair Bundle</p>
+                    <img src="/images/lookbook/natural-india-wavy.jpg" alt="Natural India Wavy" />
+                    <p className="caption">Natural India Wavy</p>
                 </div>
             </div>
         </section>
