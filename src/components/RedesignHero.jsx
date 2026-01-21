@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const RedesignHero = () => {
     return (
-        <section className="relative h-[70vh] min-h-[500px] flex flex-col justify-start items-center text-center px-8 pt-28 overflow-hidden text-[#0f0f0f]" style={{ backgroundColor: '#FFC0CB' }}>
+        <section className="relative h-[70vh] min-h-[500px] flex flex-col justify-center items-center text-center px-8 overflow-hidden text-[#0f0f0f]" style={{ backgroundColor: '#FFC0CB' }}>
             {/* Background Image/Gradient removed for solid color */}
 
             {/* Centered Image behind text */}
